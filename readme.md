@@ -29,6 +29,8 @@ Zolaのクイックスタートをベースに、少しアレンジをしたシ�
 
 ## 基本的な仕様
 
+ドメイン直下、サブディレクトリでも、とりあえず使えるはず。（config.tomlのbase_urlによる）
+
 - Zola v0.15.2
 - pure.css
 - config.toml
