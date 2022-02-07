@@ -26,6 +26,8 @@ Zolaのクイックスタートをベースに、少しアレンジをしたシ�
 
 ## 基本的な仕様
 
+ドメイン直下、サブディレクトリでも、とりあえず使えるはず。（config.tomlのbase_urlによる）
+
 - Zola v0.15.2
 - pure.css
 - カテゴリー無し
@@ -33,10 +35,12 @@ Zolaのクイックスタートをベースに、少しアレンジをしたシ�
 	- 日本語のタグ付けは、zolaの仕様で自動的に英数字へ変換される
 - ページ送り:デフォルトで10件ごと（content/blog）
 - タグのページ送り:デフォルトで5件ごと
-	- config.tomlから変更可,テンプレートの場所:templates/tags/single.html
+	- config.tomlから変更可
+	- テンプレートの場所:templates/tags/single.html
 - 投稿のURL=ファイル名（.mdファイル）
 - 固定ページのテンプレート
-	- 日付表示はコメントアウト,templates/static.html
+	- 日付表示はコメントアウト
+	- templates/static.html
 
 
 ## GitHub
