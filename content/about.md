@@ -24,12 +24,19 @@ Zolaのクイックスタートをベースに、少しアレンジをしたシ�
 5時間くらいで作ったので、わりとヤッツケです。（2022-01-16）
 
 
+### 2022-01-22（修正）
+
+- static/css/style.css
+
+
 ## 基本的な仕様
 
 ドメイン直下、サブディレクトリでも、とりあえず使えるはず。（config.tomlのbase_urlによる）
 
 - Zola v0.15.2
 - pure.css
+- config.toml
+	- base_url（最後のスラッシュ無し）
 - カテゴリー無し
 - タグ（taxonomies）有効
 	- 日本語のタグ付けは、zolaの仕様で自動的に英数字へ変換される
@@ -50,15 +57,15 @@ Zolaのクイックスタートをベースに、少しアレンジをしたシ�
 規模や好みでチョイス。
 
 - このサイトと同じテーマ（タグのページ送り有り）
-	- <a href="https://github.com/hikagestyle/zola-do-simple2" target="_blank" rel="nofollow noopener noreferrer">zola-do-simple2</a>
+	- <a href="https://github.com/hikagestyle/zola-do-simple2" target="_blank">zola-do-simple2</a>
 - 外観は同じテーマ（タグのページ送り無し）
-	- <a href="https://github.com/hikagestyle/zola-do-simple" target="_blank" rel="nofollow noopener noreferrer">zola-do-simple</a>
+	- <a href="https://github.com/hikagestyle/zola-do-simple" target="_blank">zola-do-simple</a>
 
 
 ## このテーマの基本的な使い方
 
 - config.tomlの編集
-	- base_url（最後にスラッシュなし）
+	- base_url（最後にスラッシュ無し）
 	- title
 	- description
 - templatesを必要に応じて編集
@@ -68,8 +75,12 @@ Zolaのクイックスタートをベースに、少しアレンジをしたシ�
 - 投稿をする（記事作成、ページ作成）
 	- content/blog（記事作成、タグ付け可）
 	- content（ページ作成、タグ付け不可）
-- ローカルチェック（zola serve or zola serve --drafts）
-- ビルド（zola build or zola build --drafts）
+- ローカルチェック
+	- zola serve
+	- zola serve --drafts
+- ビルド
+	- zola build
+	- zola build --drafts
 - publicフォルダが生成される
 
 
