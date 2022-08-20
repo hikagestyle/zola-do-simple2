@@ -38,4 +38,15 @@
 {% endif %}
 	</div><!-- /.post-nav -->
 {% endif %}
+
+{% if page.lower or page.higher %}
+	<div class="post-nav">
+{% if page.lower %}
+	<div><a class="prev-post" href="{{ page.lower.permalink | safe }}">‹ {{ page.lower.title }}</a></div>
+{% endif %}
+{% if page.higher %}
+	<div><a class="next-post" href="{{ page.higher.permalink | safe }}">{{ page.higher.title }} ›</a></div>
+{% endif %}
+	</div><!-- /.post-nav -->
+{% endif %}
 {% endblock paging %}
